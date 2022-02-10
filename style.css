@@ -54,7 +54,34 @@ body {
 
 #formBarFormCont {
 	flex: 1;
+	padding: 50px;
 }
+
+/* form style */
+
+#formBarForm, #formBarForm div{
+	display: flex;
+}
+
+#formBarForm {
+	flex-flow: column wrap;
+	gap: 20px;
+}
+
+#fNameLNameCont, #emailPhoneNumberCont, #passwordConfirmPassCont {
+	gap: 40px;
+}
+
+#fnameCont, 
+#lnameCont, 
+#emailCont, 
+#phoneNumberCont, 
+#passwordCont,
+#confirmPassCont {
+	flex-flow: column wrap;
+}
+
+/* end form style */
 
 #formBarSubmitCont {
 	flex: 1.2;
