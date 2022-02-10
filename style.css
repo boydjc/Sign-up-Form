@@ -1,0 +1,63 @@
+body {
+	display: flex;
+}
+
+/* Debug borders */
+#picBar, #formBar {
+	border: 1px solid black;
+}
+
+#picBar div{
+	border: 1px dashed red; 
+}
+
+#formBar div {
+	border: 1px dotted blue;
+}
+
+/* end Debug borders */
+
+#picBar {
+	padding-top: 100px;
+	flex: 1;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 700px;
+}
+
+#picBarBanner {
+	width: 100%;
+}
+
+#formBar {
+	flex: 2;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+#formBarMsgCont {
+	flex: 1.2;
+	padding: 50px;
+	display: flex;
+	align-items: flex-end;
+}
+
+#formBarMsg {
+	width: 80%;
+}
+
+#formBarMsg p {
+	font-size: 20px;
+}
+
+#formBarFormCont {
+	flex: 1;
+}
+
+#formBarSubmitCont {
+	flex: 1.2;
+}
+
+
