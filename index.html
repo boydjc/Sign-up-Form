@@ -3,77 +3,83 @@
 <head>
 	<title>Sign-up Form</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet"> 
+	<script src="script.js" defer></script>
+	<meta charset="UTF-8">
 </head>
 <body>
-	<div id="picBar">
-		<div id="picBarBanner">
-			<img src="./assets/imgs/stormtrooper.png">
-			<p>Stormtrooper Corps</p>
-			<img src="./assets/imgs/stormtrooper.png">	
-		</div>
-		<div id="picBarPhotoCred">
-			<p>This is the picBarPhotoCred</p>
-		</div>
-	</div>
-	<div id="formBar">
-		<div id="formBarMsgCont">
-			<div id="formBarMsg">
-				<p>
-				Tired of your boring life on Tatooine? Join the Stormtrooper Corps
-				and become a part of a galactic force to be reckoned with.
-				<br>
-				Sign up <em>now</em> to get started.
-				<br><br>
-				You <em>know</em> you want to.
-				</p>
+	<div id="contentCont">
+		<div id="picBar">
+			<div id="picBarBanner">
+				<img src="./assets/imgs/stormtrooper.png">
+				<p>Stormtrooper Corps</p>
+				<img src="./assets/imgs/stormtrooper.png">	
+			</div>
+			<div id="picBarPhotoCred">
+				<p>Photo by <a href="https://starwars.fandom.com/wiki/Bevel_Lemelisk">Bevel Lemelisk</a> @ <a href="https://starwars.fandom.com/wiki/Galactic_Empire/Legends">Galactic Empire</a></p>
 			</div>
 		</div>
-		<div id="formBarFormCont">
-			<p>Let's do this!</p>
-			<form>
-				<div id="formBarForm">
-					<div id="fNameLNameCont">
-						<div id="fnameCont">
-							<label for="fname" id="fnameLabel">FIRST NAME</label>
-							<input type="text" id="fname" name="fname">
-						</div>
-						<div id="lnameCont">
-							<label for="lname" id="lnameLabel">LAST NAME</label>
-							<input type="text" id="lname" name="lname">
-						</div>
-					</div>
-					<div id="emailPhoneNumberCont">
-						<div id="emailCont">
-							<label for="email" id ="emailLabel">EMAIL</label>
-							<input type="email" id="email" name="email">
-						</div>
-						<div id="phoneNumberCont">
-							<label for="pnumber" id="pnumberLabel">PHONE NUMBER</label>
-							<input type="text" id="pnumber" name="pnumber">
-						</div>
-					</div>
-					<div id="passwordConfirmPassCont">
-						<div id="passwordCont">
-							<label for="password" id="passwordLabel">PASSWORD</label>
-							<input type="password" id="password" name="password">
-						</div>
-						<div id="confirmPassCont">
-							<label for="confirmPass" id="confirmPassLabel">CONFIRM PASSWORD</label>
-							<input type="password" id="confirmPass" name="confirmPass">
-						</div>
-					</div>
+		<div id="formBar">
+			<div id="formBarMsgCont">
+				<div id="formBarMsg">
+					<p>
+					Tired of your boring life on Tatooine? Join the Stormtrooper Corps
+					and become a part of a galactic force to be reckoned with.
+					<br>
+					Sign up <em>now</em> to get started.
+					<br><br>
+					You <em>know</em> you want to.
+					</p>
 				</div>
-			</form>
-		</div>
-		<div id="formBarSubmitCont">
-			<div id="submitButtonCont">
-				<button type="button">Create Account</button>
 			</div>
-			<div id="loginLinkCont">
-				<p>
-					Already have an account? 
-					<a href="/">Log in</a>
-				</p>
+			<div id="formBarFormCont">
+				<p>Let's do this!</p>
+				<sub>* = required</sub>
+				<form id="pageForm" action="">
+					<div id="formBarForm">
+						<div id="fNameLNameCont">
+							<div id="fnameCont">
+								<label for="fname" id="fnameLabel"><sup>*</sup>FIRST NAME</label>
+								<input type="text" id="fname" name="fname" required>
+							</div>
+							<div id="lnameCont">
+								<label for="lname" id="lnameLabel"><sup>*</sup>LAST NAME</label>
+								<input type="text" id="lname" name="lname" required>
+							</div>
+						</div>
+						<div id="emailPhoneNumberCont">
+							<div id="emailCont">
+								<label for="email" id ="emailLabel"><sup>*</sup>EMAIL</label>
+								<input type="email" id="email" name="email" required>
+							</div>
+							<div id="phoneNumberCont">
+								<label for="pnumber" id="pnumberLabel">PHONE NUMBER</label>
+								<input type="text" id="pnumber" name="pnumber">
+							</div>
+						</div>
+						<div id="passwordConfirmPassCont">
+							<div id="passwordCont">
+								<label for="password" id="passwordLabel"><sup>*</sup>PASSWORD</label>
+								<input type="password" id="password" name="password" required>
+							</div>
+							<div id="confirmPassCont">
+								<label for="confirmPass" id="confirmPassLabel"><sup>*</sup>CONFIRM PASSWORD</label>
+								<input type="password" id="confirmPass" name="confirmPass" required>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="formBarSubmitCont">
+				<div id="submitButtonCont">
+					<input type="submit" form="pageForm" value="Create Account">
+				</div>
+				<div id="loginLinkCont">
+					<p>
+						Already have an account? 
+						<a href="/">Log in</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
